@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="NavBarDataBinding.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" xmlns:dxn="http://schemas.devexpress.com/winfx/2008/xaml/navbar"
+             Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EmployeeItemVisualStyle" TargetType="ButtonBase">
+                <Setter Property="dxn:NavBarViewBase.ImageSettings">
+                    <Setter.Value>
+                        <dxn:ImageSettings Height="100" Width="100" Stretch="Uniform" StretchDirection="Both" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="dxn:NavBarViewBase.LayoutSettings">
+                    <Setter.Value>
+                        <dxn:LayoutSettings TextHorizontalAlignment="Center" ImageHorizontalAlignment="Center" ImageDocking="Top"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <dxn:NavBarControl x:Name="navBar" Width="250" Margin="10"/>
+    </Grid>
+</UserControl>
