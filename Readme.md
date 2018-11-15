@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/NavBarDataBinding/MainPage.xaml) (VB: [MainPage.xaml](./VB/NavBarDataBinding/MainPage.xaml))
+* [MainPage.xaml.cs](./CS/NavBarDataBinding/MainPage.xaml.cs) (VB: [MainPage.xaml](./VB/NavBarDataBinding/MainPage.xaml))
+<!-- default file list end -->
 # How to populate NavBarControl with groups and items from data source
 
 
